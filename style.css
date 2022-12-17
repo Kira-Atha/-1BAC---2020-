@@ -1,0 +1,237 @@
+/**********
+* GENERAL *
+***********/
+body{
+    font-family: Georgia,Times New Roman,sans-serif;
+    font-size: 15px;
+    background-image:url("bg.png");
+	background-size : auto;
+}
+table{
+    border-style:solid;
+    background-color: rgba(0, 0, 255, 0.33);
+}
+td{
+    padding:2px;
+    border-style: none none none dashed;
+    border-color: grey;
+    border-width:2px;
+}
+th{
+    border-style:none none solid dashed;
+    border-color:grey;
+}
+.legend{
+    font-size:20px;
+    font-family:Arial, sans-serif;
+    font-style: italic,strong;
+    color: rgb(255, 255, 255);
+}
+#login{
+    position:relative;
+    height:50%;
+    width:20%;
+    display:block;
+    border:0;
+    margin:0 auto;
+}
+#register{
+    position:relative;
+    height:50%;
+    width:20%;
+    margin:0 auto;
+    display:none;
+    border:0;
+}
+#content_msg{
+    position:absolute;
+    height:60%;
+    width:65%;
+    display:block;
+    border:0;
+}
+#add_msg{
+    position:absolute;
+    height:50%;
+    width:20%;
+    display:block;
+    border:0;
+    right:10%;
+}
+#answer{
+    position:relative;
+    height:50%;
+    width:60%;
+    display:block;
+    border:0;
+    left:2%;
+}
+.content{
+    position:static;
+    background-color: rgba(151, 255, 222, 0.28);
+    margin : 0 auto;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.error{
+    font-style: italic;
+    font-size: 14px;
+    color: #c70000;
+    text-align:center;
+}
+.hello{
+    height:auto;
+    width:600px;
+    background-color: rgba(255, 255, 255, 0.69);
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+    color: #425e65;
+    text-align:center;
+}
+
+/*********
+* HEADER *
+*********/
+.header{
+    background-color : rgba(0, 77, 128, 0.58);
+    filter : blur(200);
+    padding : 1px;
+}
+.border_header{
+    padding : 1%;
+    background-color: rgba(45, 158, 131, 0.72);
+    box-shadow: 2px 2px 1px 1px rgba(20, 28, 35, 0.2);
+}
+.border_two_header{
+    background-color: rgba(74, 123, 170, 0.7);
+    box-shadow: 2px 2px 1px 1px rgba(20, 28, 35, 0.2);
+    padding:5px;
+    text-align: center;
+    font-family: Agency FB,Times New Roman,sans-serif;
+    font-size: 45px;
+    text-shadow:  white 0.006em 0.006em 0.007em,
+    #9c9c9c 1px 1px 1px,
+    #9c9c9c 1px 2px 1px,
+    #9c9c9c 1px 3px 1px,
+    #9c9c9c 1px 4px 1px,
+    #9c9c9c 1px 5px 1px,
+    rgba(16, 16, 16, 0.4) 1px 18px 6px,
+    rgba(16, 16, 16, 0.2) 1px 22px 10px,
+    rgba(16, 16, 16, 0.2) 1px 26px 35px,
+    rgba(16, 16, 16, 0.4) 1px 30px 65px,
+    white -0.15em -0.1em 100px;color:#fff;
+}
+.img_header{
+    width : 25px;
+    padding : 0;
+    margin : 0;
+}
+.trait_header{
+    filter : brightness(10);
+}
+/*******
+* MENU *
+********/
+.dropdownmenu{
+    font-family: Georgia,"Times New Roman",sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.dropdownmenu,/* Menu principal & */
+.dropdownmenu ul { /* Sous-menus */
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+}
+.dropdownmenu ul {/*Masque les sous-menus par défaut.*/
+    display: none;
+}
+.dropdownmenu li {/*inline-block permet l'affichage horizontal */
+    display: inline-block;
+    position: relative;
+}
+.dropdownmenu a {/* Transformation des liens en blocs pour les dimensionner. */
+    display: block;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    padding: 3px 5px;
+    text-align: center;
+}
+.dropdownmenu li:hover ul {/*Sélecteur pour mise en forme des sous-menus */
+    display: block ;
+    position: absolute;
+    top: 36px;
+    left: 10px;
+    z-index: 100;/*Nécessaire pour la mise en premier plan des sous-menus */
+}
+/* Gestion des couleurs */
+.dropdownmenu li {
+    background-color: rgba(100, 149, 179, 0.46); /* Couleur d'arriere-plan du menu */
+}
+.dropdownmenu li a {
+    color: rgba(0, 0, 45, 0.79); /* Couleur du texte du menu */
+}
+.dropdownmenu li:hover {
+    background-color: rgba(139, 208, 198, 0.68); /* Couleur d'arriere-plan du menu au survol (:hover)*/ }
+.dropdownmenu li:hover a {
+    color: #67caff; /* Couleur du texte du menu au survol */
+}
+.dropdownmenu ul li {
+    background-color: #1067a8; /* Couleur d'arriere-plan des sous-menu */
+}
+.dropdownmenu ul li:hover {
+    background-color: #000; /* Couleur d'arriere-plan des sous-menu au survol */ }
+.dropdownmenu ul li a {
+    color: #326f8b; /* Couleur du texte des sous-menu */ }
+.dropdownmenu ul li:hover a {
+    color: #57849e; /* Couleur du texte des sous-menu au survol */
+}
+/*********
+* FOOTER *
+**********/
+.footer{
+    position:fixed;
+    bottom:0;
+    right:0;
+    font-style: italic;
+    font-size: 14px;
+    color: #000000;
+}
+/*********************
+* SPECIFIC/DIV/OTHER *
+*********************/
+#info_register{
+    width:500px;
+    border-style:solid;
+    border-color:black;
+    border-width: 1px;
+    background-color: rgba(91, 175, 231, 0.56);
+    text-align:justify;
+}
+#button_register,.button{
+    width:auto;
+    background-color: rgba(0, 0, 144, 0.41);
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 45, 0.3);
+    border-radius: 100% 100% 100% 100%;
+    line-height:20px;
+    text-align:center;
+    color:white;
+}
+#button_login{
+    width:auto;
+    background-color: rgba(0, 0, 144, 0.41);
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 45, 0.3);
+    border-radius: 100% 100% 100% 100%;
+    line-height:20px;
+    text-align:center;
+    color:white;
+    visibility: hidden;
+}
+.msg{
+    background-color: white;
+    border-style:solid;
+    border-color:grey;
+    border-width: 1px;
+}

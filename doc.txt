@@ -1,0 +1,12 @@
+|*************|
+| HUYGEBAERT  |
+| AMANDINE    |
+|*************|
+
+|**********|
+| script.js|
+|**********|
+
+/ function verif / 
+
+// Teste les différentes valeurs récupérées avec des expressions régulières, sur la page de login pour modifier la couleur du cadre.
